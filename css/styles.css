@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body {
+	background-image: url("../images/template/b-back.jpg");
+	background-size: 100% 100%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: larger;
+}
+
+.clearfloat {
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	float: none;
+	height: 0px;
+	width: 0px;
+	border: 0px none;
+	line-height: 0px;
+}
+
+#outer {
+	max-width: 1020px;
+	width: 97%;
+	margin: auto;
+	padding: 1.5%;
+}
+
+header {
+	height: 75px;
+	width: 100%;
+	background-color: rgb( 255, 106, 51);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	white-space: nowrap;
+}
+
+#span1 {
+	background-image: url("../images/template/logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 14.608%;
+    padding-right: 50.392%;
+	display: inline-block;
+}
+
+#span2 {
+	background-image: url("../images/template/football.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 7.353%;
+    display: inline-block;
+    background-position: right;
+    padding-left: 27.1%;
+}
+
+nav {
+	background-color: rgb( 255, 203, 26);
+	height: 40px;
+	text-align: center;
+	width: 100%;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+nav h1 {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+	display: inline;
+	font-weight: 500;
+	color: white;
+}
+
+nav ul, footer ul {
+	padding: 0;
+	margin: 0;
+	line-height: 40px;
+}
+
+nav li, footer li {
+	list-style-type: none;
+	display: inline;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	background-color: rgb(235, 64, 52);
+	border-radius: 10px;
+	width: 94%;
+	margin: 1.5% 0;
+	padding: 3%;
+}
+
+main h2 {
+	text-align: right;
+	color: white;
+}
+
+footer {
+	height: 115px;
+	width: 94%;
+	background-color: rgb( 255, 106, 51);
+	border-radius: 10px;
+	text-align: center;
+	padding: 3%;
+}
+
+footer span {
+	background-image: url("../images/template/sitemap.png");
+	background-size: 100% 100%;
+	height: 69px;
+	width: 69px;
+	display: inline-block;
+}
+
+@media only screen and (max-width: 720px) {
+	body {
+		font-size: 1.05em !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		font-size: 0.85em  !important;
+	}
+}
+
+@media only screen and (max-width: 240px) {
+	body {
+		font-size: 0.75em !important;
+	}
+}
+
