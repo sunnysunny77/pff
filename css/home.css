@@ -1,12 +1,18 @@
 @charset "utf-8";
 
-main h2 + br + span {
+.fb-like,
+.twitter-share-button {
+  float: right;
+  margin: 0.25%;
+}
+
+#goal {
 	background-image: url(../images/home/goal.png);
 	background-size: 100% 100%;
 	height: 138px;
 	width: 138px;
 	display: block;
-	margin: auto;
+	margin: 50px auto auto auto;
 	opacity: 0.3;
 }
 
