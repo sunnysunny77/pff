@@ -115,8 +115,8 @@ window.onload = function () {
   addEvent(checkId("form"), "submit", validate);
 
   // Enable tooltips:
-  enableTooltips(checkId("email"));
   enableTooltips(checkId("name"));
+  enableTooltips(checkId("email"));
   enableTooltips(checkId("phone"));
   enableTooltips(checkId("age"));
 }; // End of initiation.
