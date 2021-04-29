@@ -18,7 +18,7 @@ function message(obj, toggleClass, message) {
 
   // Toggle error, correct className:
   let msgClass;
-  toggleClass ? (msgClass = "error") : (msgClass = "correct");
+  msgClass = toggleClass ? "error" : "correct";
   msg.className = msgClass;
   msg.innerHTML = message;
 } // End of message() function.
