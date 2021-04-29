@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+form {
+  color: white;
+  padding-top: 10px;
+}
+
+labael {
+  display: block;
+  height: 45.5px;
+  margin: 5px auto;
+}
+
+input {
+  display: block;
+  width: calc(100% - 20px);
+  margin: auto auto 10px auto;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  padding: 5px 10px;
+}
+
+input[type="submit"] {
+  width: initial;
+  margin: 6% auto;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  font-weight: 900;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin: 22.525px 11.25125px;
+}
+
+select {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.tooltip {
+  visibility: hidden;
+  display: block;
+}
+
+.noToolTip {
+  height: 25px;
+}
+
+.error {
+  color: rgb(255, 203, 26);
+}
+
+.correct {
+  color: rgb(40, 199, 45);
+}
+
+.error,
+.correct {
+  float: right;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  labael {
+    height: 38.5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  labael {
+    height: 31.5px;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  labael {
+    height: 28px;
+  }
+}
