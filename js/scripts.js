@@ -72,7 +72,7 @@ function validate(e) {
   }
 
   // Validate the age:
-  if (age.value > 0 && age.value < 110) {
+  if (/^[1-9][0-9]?$/.test(age.value)) {
     message(age, false, correct);
   } else {
     message(age, true, incorrect);
@@ -80,7 +80,7 @@ function validate(e) {
   }
 
   // Validate the gender:
-  if (male.value === "male" || female.value === "female") {
+  if (male.checked || female.checked) {
     message(male, false, correct);
   } else {
     message(male, true, incorrect);
