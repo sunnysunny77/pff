@@ -5,7 +5,7 @@ form {
   padding-top: 10px;
 }
 
-labael {
+label {
   display: block;
   height: 45.5px;
   margin: 5px auto;
@@ -68,19 +68,19 @@ select {
 }
 
 @media only screen and (max-width: 720px) {
-  labael {
+  label {
     height: 38.5px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  labael {
+  label {
     height: 31.5px;
   }
 }
 
 @media only screen and (max-width: 240px) {
-  labael {
+  label {
     height: 28px;
   }
 }
