@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $age = $_REQUEST["age"];
     $gender = $_REQUEST["gender"];
     $league = $_REQUEST["league"];
-    $to_email = "shlooby07@gmail.com";
+    $to_email = "";
     $subject = "New Membership Enquiry";
     
     $contactus = "
