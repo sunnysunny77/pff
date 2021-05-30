@@ -18,6 +18,7 @@
     }
 </style>
 <?php
+$res;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_REQUEST["name"];
     $email = $_REQUEST["email"];
@@ -25,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $age = $_REQUEST["age"];
     $gender = $_REQUEST["gender"];
     $league = $_REQUEST["league"];
-    $to_email = "";
+    $to_email = "shlooby07@gmail.com";
     $subject = "New Membership Enquiry";
     
     $contactus = "
@@ -39,11 +40,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $contactus  = wordwrap($contactus ,70);
 
-    mail($to_email,$subject,$contactus);
+    $mail = mail($to_email,$subject,$contactus);
+    if (!$mail) {
+      $res = print_r(error_get_last()['message']);
+    } else {
+      $res = "Thanks email sent, redirecting in 5 seconds..";
+    }
 }
 ?>
 
-    <p> Thanks email sent, redirecting in 5 seconds... </p> 
+    <p> <?php echo $res; ?></p> 
     <?php header( "Refresh:5; url=http://pff.sunnyhome.site", true, 303); ?>
 </body>
 </html>
