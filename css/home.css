@@ -46,23 +46,23 @@ aside {
 	width: 31.125%;
 	margin: 0 1.5% 0 0;
 	text-align: center;
-	background-color: rgb( 114, 199, 40);
+	background-color: darksalmon;
 	box-shadow: 0 0 3px cornsilk;
 	border-radius: 10px;
 	padding: 3%;
-	color: black;
+	color: #1F1F1F;
 	height: 355px
 }
 
 article {
 	text-align: center;
-	background-color: rgb( 40, 199, 45);
+	background-color: darkseagreen;
 	width: 53.375%;
 	margin: 0 0 0 1.5%;
 	box-shadow: 0 0 3px cornsilk;
 	border-radius: 10px;
 	padding: 3%;
-	color: black;
+	color: #1F1F1F;
 	float: left;
 	height: 195px
 }
