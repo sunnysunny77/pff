@@ -29,7 +29,7 @@ body {
 header {
 	height: 75px;
 	width: 100%;
-	background-color: rgb( 255, 106, 51);
+	background-color: #f9382a;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	white-space: nowrap;
@@ -71,7 +71,7 @@ nav h1 {
 	font-size: inherit;
 	display: inline;
 	font-weight: 500;
-	color: white;
+	color: black;
 }
 
 nav ul, footer ul {
@@ -86,12 +86,12 @@ nav li, footer li {
 }
 
 a {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
 main {
-	background-color: rgb(235, 64, 52);
+	background-color: #e01a1a;
 	border-radius: 10px;
 	width: 94%;
 	margin: 1.5% 0;
@@ -106,7 +106,7 @@ main h2 {
 footer {
 	height: 115px;
 	width: 94%;
-	background-color: rgb( 255, 106, 51);
+	background-color: rgb( 255, 203, 26);
 	border-radius: 10px;
 	text-align: center;
 	padding: 3%;
