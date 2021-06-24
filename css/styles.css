@@ -29,7 +29,7 @@ body {
 header {
 	height: 75px;
 	width: 100%;
-	background-color: #f9382a;
+	background-color: coral;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	white-space: nowrap;
@@ -91,7 +91,7 @@ a {
 }
 
 main {
-	background-color: #e01a1a;
+	background-color: #21633E;
 	border-radius: 10px;
 	width: 94%;
 	margin: 1.5% 0;
@@ -106,7 +106,7 @@ main h2 {
 footer {
 	height: 115px;
 	width: 94%;
-	background-color: rgb( 255, 203, 26);
+	background-color: darkorange;
 	border-radius: 10px;
 	text-align: center;
 	padding: 3%;
