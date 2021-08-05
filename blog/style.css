@@ -13,12 +13,17 @@ main {
 	color: black;
 	min-height: 74.9vh;
 	padding: 2.5%;
+	background-color: antiquewhite;
 }
 a {
 	color: blue;
 }
 a:hover {
 	text-decoration: none;
+}
+
+nav, .footer {
+	background-color: #21633E;
 }
 
 /* footer */ 
@@ -33,5 +38,5 @@ footer ul {
 
 .under {
 	border-bottom: 1px solid white;
-	width: 90px;
+	width: 95px;
 }
