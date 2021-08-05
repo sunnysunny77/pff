@@ -26,8 +26,6 @@
 
 	<?php endif; ?>
 
-	<?php wp_pagenavi(); ?>
-
 </div>
 
 <?php get_footer() ?>
