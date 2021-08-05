@@ -1,0 +1,37 @@
+/*!
+Theme Name: bs
+Author: D.C
+*/
+@charset "utf-8";
+/* css */  
+
+body {
+	color: black;
+}
+
+main {
+	color: black;
+	min-height: 74.9vh;
+	padding: 2.5%;
+}
+a {
+	color: blue;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* footer */ 
+footer a {
+	color: inherit;
+}
+
+footer ul {
+	list-style-type: none;
+	width: 90px;
+}
+
+.under {
+	border-bottom: 1px solid white;
+	width: 90px;
+}
