@@ -1,5 +1,5 @@
 </main>
-<footer class="footer text-center bg-dark  pb-5 pt-5" style="clear: both;">
+<footer class="footer text-center pb-5 pt-5" style="clear: both;">
 	<div class="container col-10 col-lg-6 text-right  mx-auto">
 		<div class="row">
 			<div class="col-5 col-lg-3 mr-3 p-0 ">
@@ -7,19 +7,19 @@
 					<li class="under text-left mb-2"><span class="dashicons dashicons-admin-links"></span>&nbsp;&nbsp;Site</li>
 					<li><a href="<?php echo wp_make_link_relative('https://localhost/blog'); ?>">BLOG</a></li>
 					<li>
-						<a href="https://perthfootballfixtures.online/index.html">HOME</a>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/index.html" ?>>HOME</a>
 					</li>
 					<li>
-						<a href="https://perthfootballfixtures.online/fixtures.html">FIXTURES</a>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/fixtures.html" ?>>FIXTURES</a>
 					</li>
 					<li>
-						<a href="https://perthfootballfixtures.online/gallery.html">GALLERY</a>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/gallery.html" ?>>GALLERY</a>
 					</li>
 					<li>
-						<a href="https://perthfootballfixtures.online/forms.html">FORMS</a>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/forms.html" ?>>FORMS</a>
 					</li>
 					<li>
-						<a href="https://perthfootballfixtures.online/guidelines.html">GUIDELINES</a>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/guidelines.html" ?>>GUIDELINES</a>
 					</li>
 				</ul>
 			</div>
