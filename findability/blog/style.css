@@ -20,6 +20,7 @@ a {
 }
 a:hover {
 	text-decoration: none;
+	color: orange;
 }
 
 nav, .footer {
@@ -33,10 +34,10 @@ footer a {
 
 footer ul {
 	list-style-type: none;
-	width: 90px;
+	width: 110px;
 }
 
 .under {
 	border-bottom: 1px solid white;
-	width: 95px;
+	width: 110px;
 }
