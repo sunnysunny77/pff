@@ -58,7 +58,6 @@ header {
 
 nav {
 	background-color: rgb( 255, 203, 26);
-	height: 40px;
 	text-align: center;
 	width: 100%;
 	border-bottom-right-radius: 10px;
@@ -90,6 +89,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 main {
 	background-color: #21633E;
 	border-radius: 10px;
@@ -104,7 +107,6 @@ main h2 {
 }
 
 footer {
-	height: 115px;
 	width: 94%;
 	background-color: darkorange;
 	border-radius: 10px;
@@ -118,11 +120,18 @@ footer span {
 	height: 69px;
 	width: 69px;
 	display: inline-block;
+	margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 720px) {
 	body {
 		font-size: 1.05em !important;
+	}
+	nav, footer {
+		font-size: small;
+	}
+	nav ul, footer ul {
+		line-height: 25px;
 	}
 }
 
@@ -135,12 +144,6 @@ footer span {
 @media only screen and (max-width: 240px) {
 	body {
 		font-size: 0.75em !important;
-	}
-	nav {
-		height: initial;
-	}
-	nav ul, footer ul {
-		line-height: 20px;
 	}
 }
 

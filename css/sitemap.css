@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+main ul {
+    color: white;
+    width: 260px;
+    margin: auto 20% auto auto;
+    display: inline-block;
+    padding: 0;
+    margin: 0 18% 15% 18%;
+}
+
+main ul ul {
+    padding-left: 30px;
+    margin: 0;
+}
+
+main ul a {
+    color: inherit;
+}
+
+main span {
+    background-image: url("../images/sitemap/web.png");
+    display: inline-block;
+    background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+    width: 150px;
+    height: 150px;
+    margin: 10%;
+}
+
+@media only screen and (max-width: 1067px) {
+    main ul {
+        width: 80%;
+    }
+    main span, main ul {
+        margin: 0 auto 5% auto;
+        display: block;
+    }
+}
