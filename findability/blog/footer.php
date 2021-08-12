@@ -21,6 +21,12 @@
 					<li>
 						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/guidelines.html" ?>>GUIDELINES</a>
 					</li>
+					<li>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/findability.html" ?>>FINDABILITY</a>
+					</li>
+					<li>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/sitemap.html" ?>>SITE MAP</a>
+					</li>
 				</ul>
 			</div>
 			<div class="col-5 col-lg-3 mr-3 p-0">

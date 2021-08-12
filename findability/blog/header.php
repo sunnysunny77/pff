@@ -4,8 +4,8 @@
 <head>
 
   <meta charset="utf-8">
- 	<meta name="description" content="Perth WA Football Fixtures - Blog" />
-	<meta name="keywords" content="Perth WA, Football, AFL, WA, Western Australia" />
+ 	<meta name="description" content="Perth WA Football Fixtures - Findability Blog" />
+	<meta name="keywords" content="Perth WA, Football, AFL, WA, Western Australia, Findability" />
     <meta name="author" content="D.C" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 
   <header>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
+    <nav class="navbar navbar-expand-md navbar-dark" role="navigation">
 
       <div class="container">
 
