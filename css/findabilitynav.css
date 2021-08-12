@@ -7,5 +7,12 @@
 	border-bottom: 7px solid coral;
 }
 
+nav:nth-child(3) li {
+	width: 34%
+}
 
-
+@media only screen and (max-width: 720px) {
+	nav:nth-child(3) li {
+		width: 100%
+	}
+}
