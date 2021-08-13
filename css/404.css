@@ -1,0 +1,12 @@
+@charset "utf-8";
+@charset "utf-8";
+
+main p {
+	color: white;
+	text-align: center;
+}
+
+main img {
+	display: block;
+	margin: auto;
+}
