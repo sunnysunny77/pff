@@ -1,0 +1,15 @@
+@charset "utf-8";
+@charset "utf-8";
+
+main img {
+	display: block;
+	margin: auto;
+}
+
+main a {
+	color: white;
+	display: block;
+	width: 220PX;
+	margin: auto;
+	text-align: center;
+}
