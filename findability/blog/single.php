@@ -20,11 +20,11 @@
 
           </nav>
 
-          <h3>
+          <h1>
             <a href="<?php the_permalink(); ?>">
               <?php the_title(); ?>
             </a>
-          </h3> <!-- Title of the post -->
+          </h1> <!-- Title of the post -->
 
           <?php echo get_the_date(); ?>
           <!-- Date published -->

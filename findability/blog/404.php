@@ -2,7 +2,7 @@
 
 <div id="notfound" class="content-area col-sm-12 col-lg-8 mx-auto">
 
-		<h2>404 not found</h2>
+		<h1>404 not found</h1>
 		<h2>:(</h2>
 		<p> 
 		Regretfully this page could not be found.

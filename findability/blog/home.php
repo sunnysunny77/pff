@@ -2,15 +2,13 @@
 
 <div id="home" class="content-area col-sm-12 col-lg-8 mx-auto">
 
-  <h1><?php single_post_title(); ?></h1>
-
   <?php if (have_posts()) : ?>
 
     <?php while (have_posts()) : the_post(); ?>
 
       <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <h2> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h2>
+        <h1> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h1>
 
         <?php echo get_the_date(); ?>
 
