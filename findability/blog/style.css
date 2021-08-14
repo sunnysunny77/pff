@@ -3,41 +3,48 @@ Theme Name: bs
 Author: D.C
 */
 @charset "utf-8";
-/* css */  
+/* css */
 
 body {
-	color: black;
+  color: black;
 }
 
 main {
-	color: black;
-	min-height: 74.9vh;
-	padding: 2.5%;
-	background-image: url('https://perthfootballfixtures.online/findability/blog/wp-content/uploads/2021/08/b-back.png');
+  color: black;
+  min-height: 74.9vh;
+  padding: 2.5%;
+  background-image: url("https://perthfootballfixtures.online/findability/blog/wp-content/uploads/2021/08/b-back.png");
 }
+
 a {
-	color: #575757;
+  color: #575757;
 }
+
 a:hover {
-	text-decoration: none;
-	color: orange;
+  text-decoration: none;
+  color: orange;
 }
 
-.navbar, .footer {
-	background-color: #21633E;
+.navbar,
+.footer {
+  background-color: #21633e;
 }
 
-/* footer */ 
+.searchform input[type="text"] {
+  width: calc(100% - 71px);
+}
+
+/* footer */
 footer a {
-	color: inherit;
+  color: inherit;
 }
 
 footer ul {
-	list-style-type: none;
-	width: 110px;
+  list-style-type: none;
+  width: 110px;
 }
 
 .under {
-	border-bottom: 1px solid white;
-	width: 110px;
+  border-bottom: 1px solid white;
+  width: 110px;
 }
