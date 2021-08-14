@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="search" class="content-area col-sm-12 col-lg-8 mx-auto">
+<section id="search" class="content-area col-sm-12 col-lg-8 mx-auto">
 
     <h1>Search: &nbsp; <?php the_search_query() ?></h1>
 
@@ -26,6 +26,6 @@
 
     <?php get_search_form(); ?> 
 
-</div>
+</section>
 
 <?php get_footer(); ?>

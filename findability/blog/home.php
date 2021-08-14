@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div id="home" class="content-area col-sm-12 col-lg-8 mx-auto">
+
 
   <?php if (have_posts()) : ?>
 
@@ -36,6 +36,6 @@
 
 	<?php dynamic_sidebar("widget1"); ?>
 
-</div>
+
 
 <?php get_footer(); ?>
