@@ -16,14 +16,14 @@ main {
 	background-image: url('https://perthfootballfixtures.online/findability/blog/wp-content/uploads/2021/08/b-back.png');
 }
 a {
-	color: blue;
+	color: #575757;
 }
 a:hover {
 	text-decoration: none;
 	color: orange;
 }
 
-nav, .footer {
+.navbar, .footer {
 	background-color: #21633E;
 }
 
