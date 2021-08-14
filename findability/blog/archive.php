@@ -22,7 +22,11 @@
 
 			<?php the_excerpt(); ?>
 
-			<?php comments_popup_link(); ?>.
+			<?php comments_popup_link(); ?>
+
+			<br>
+
+			<br>
 
 		<?php endwhile; ?>
 

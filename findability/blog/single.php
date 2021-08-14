@@ -4,7 +4,16 @@
 
   <?php while (have_posts()) : the_post(); ?>
 
-    <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <?php
+    $classes = [
+      'content-area',
+      'col-sm-12 ',
+      'col-lg-8',
+      'mx-auto'
+    ];
+    ?>
+
+    <section id="post-<?php the_ID(); ?>" <?php post_class($classes); ?>>
 
       <div id="prevpost"><?php previous_post_link(); ?></div>
 		

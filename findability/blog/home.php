@@ -7,13 +7,12 @@
     <?php
     $classes = [
       'content-area',
-      'gcol-sm-12 ',
+      'col-sm-12 ',
       'col-lg-8',
-      'mx-auto',
-      $termsString
+      'mx-auto'
     ];
     ?>
-    
+
     <article <?php post_class($classes); ?> id="post-<?php the_ID(); ?>">
 
       <h1> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h1>
@@ -37,6 +36,8 @@
       <?php edit_post_link(); ?>
          
     </article>
+
+    <br>
 
   <?php endwhile; ?>
 
