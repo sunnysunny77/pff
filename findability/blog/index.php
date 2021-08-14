@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="index" class="content-area col-sm-12 col-lg-8 mx-auto">
+<section id="index" class="content-area col-sm-12 col-lg-8 mx-auto">
 
     <?php if (have_posts()) : ?>
 
@@ -16,6 +16,6 @@
 
     <?php endif; ?>
 
-</div>
+</section>
 
 <?php get_footer(); ?>

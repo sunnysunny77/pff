@@ -1,41 +1,37 @@
 <?php get_header() ?>
 
+<?php if (have_posts()) : ?>
 
+  <?php while (have_posts()) : the_post(); ?>
 
-  <?php if (have_posts()) : ?>
+    <article class="content-area col-sm-12 col-lg-8 mx-auto" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <?php while (have_posts()) : the_post(); ?>
+      <h1> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h1>
 
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <?php echo get_the_date(); ?>
 
-        <h1> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h1>
+      <?php the_time(); ?>
 
-        <?php echo get_the_date(); ?>
+      <?php the_author(); ?>
 
-        <?php the_time(); ?>
+      <?php if (has_post_thumbnail()) {  ?> <div> <?php the_post_thumbnail(); ?> </div> <?php } ?>
 
-        <?php the_author(); ?>
+      <?php the_content() ?>
 
-        <?php if (has_post_thumbnail()) {  ?> <div> <?php the_post_thumbnail(); ?> </div> <?php } ?>
+      <?php the_category(', ') ?>
 
-        <?php the_content() ?>
+      <?php the_tags(', ') ?>
 
-        <?php the_category(', ') ?>
+      <?php comments_popup_link(); ?>.
 
-        <?php the_tags(', ') ?>
+      <?php edit_post_link(); ?>
+         
+    </article>
 
-        <?php comments_popup_link(); ?>.
+  <?php endwhile; ?>
 
-        <?php edit_post_link(); ?>
-		           
-  </article> 
+<?php endif; ?>
 
-    <?php endwhile; ?>
-
-  <?php endif; ?>
-
-	<?php dynamic_sidebar("widget1"); ?>
-
-
+<?php dynamic_sidebar("widget1"); ?>
 
 <?php get_footer(); ?>

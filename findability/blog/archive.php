@@ -1,6 +1,8 @@
 <?php get_header() ?>
 
-<div id="archive" class="content-area col-sm-12 col-lg-8 mx-auto">
+<section id="archive" class="content-area col-sm-12 col-lg-8 mx-auto">
+
+	<h1><?php the_archive_title(); ?></h1>
 
 	<?php if (have_posts()) : ?>
 
@@ -8,7 +10,7 @@
 
 			<?php if (has_post_thumbnail()) {  ?> <div> <?php the_post_thumbnail(); ?> </div> <?php } ?>
 
-			<h1><?php the_title(); ?></h1>
+			<h2><?php the_title(); ?></h2>
 
 			<?php the_content() ?>
 
@@ -26,6 +28,6 @@
 
 	<?php endif; ?>
 
-</div>
+</section>
 
 <?php get_footer(); ?>

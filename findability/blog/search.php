@@ -10,7 +10,9 @@
 
             <?php if (has_post_thumbnail()) {  ?> <div> <?php the_post_thumbnail(); ?> </div> <?php } ?>
 
-            <a href="<?php the_permalink() ?>"> <h2><?php the_title(); ?></h2> </a>
+            <a href="<?php the_permalink() ?>">
+                <h2><?php the_title(); ?></h2>
+            </a>
 
             <br>
 
@@ -24,7 +26,7 @@
 
     <?php endif; ?>
 
-    <?php get_search_form(); ?> 
+    <?php get_search_form(); ?>
 
 </section>
 
