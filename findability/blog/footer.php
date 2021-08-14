@@ -27,7 +27,7 @@
 						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/findability.html" ?>>FINDABILITY</a>
 					</li>
 					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/sitemap.html" ?>>SITE MAP</a>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/site-map.html" ?>>SITE MAP</a>
 					</li>
 				</ul>
 			</div>
