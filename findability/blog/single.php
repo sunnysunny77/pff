@@ -6,12 +6,12 @@
 
     <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <nav>
+      <div>
 
         <div id="prevpost"><?php previous_post_link(); ?></div>
         <div id="nextpost"><?php next_post_link(); ?> </div>
 
-      </nav>
+      </div>
 
       <h1>
         <a href="<?php the_permalink(); ?>">
