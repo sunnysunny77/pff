@@ -6,7 +6,7 @@
 				<ul class="text-light p-0">
 					<li class="under text-left mb-2"><span class="dashicons dashicons-admin-links"></span>&nbsp;&nbsp;Site</li>
 					<li>
-						<a href="<?php echo wp_make_link_relative('https://localhost/blog'); ?>">FINDABILITY BLOG</a>
+						<a href="<?php echo wp_make_link_relative('https://localhost/findability/blog/'); ?>">FINDABILITY BLOG</a>
 					</li>
 					<li>
 						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/index.html" ?>>HOME</a>
