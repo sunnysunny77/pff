@@ -4,8 +4,8 @@
 <head>
 
   <meta charset="utf-8">
- 	<meta name="description" content="Perth WA Football Fixtures - Findability Blog" />
-	<meta name="keywords" content="Perth WA, Football, AFL, WA, Western Australia, Findability" />
+ 	<meta name="description" content="Findability Blog - Findability" />
+	<meta name="keywords" content="Findability, SEO, Search Engine Optimization, Findability Blog" />
     <meta name="author" content="D.C" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
