@@ -3,8 +3,18 @@
 <?php if (have_posts()) : ?>
 
   <?php while (have_posts()) : the_post(); ?>
-
-    <article class="content-area col-sm-12 col-lg-8 mx-auto" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    
+    <?php
+    $classes = [
+      'content-area',
+      'gcol-sm-12 ',
+      'col-lg-8',
+      'mx-auto',
+      $termsString
+    ];
+    ?>
+    
+    <article <?php post_class($classes); ?> id="post-<?php the_ID(); ?>">
 
       <h1> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h1>
 

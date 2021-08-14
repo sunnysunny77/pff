@@ -1,80 +1,54 @@
 <?php get_header() ?>
 
+<?php if (have_posts()) : ?>
 
-<div id="single" class="content-area col-sm-12 col-lg-8">
-  
-  <?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
+  <?php while (have_posts()) : the_post(); ?>
 
-      <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <!-- http://codex.wordpress.org/Template_Tags/post_class -->
+    <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+      <nav>
 
-        <header>
+        <div id="prevpost"><?php previous_post_link(); ?></div>
+        <div id="nextpost"><?php next_post_link(); ?> </div>
 
-          <nav>
-            <!-- Post navigation -->
+      </nav>
 
-            <div id="prevpost"><?php previous_post_link(); ?></div>
-            <div id="nextpost"><?php next_post_link(); ?> </div>
+      <h1>
+        <a href="<?php the_permalink(); ?>">
+          <?php the_title(); ?>
+        </a>
+      </h1>
 
-          </nav>
+      <?php echo get_the_date(); ?>
 
-          <h1>
-            <a href="<?php the_permalink(); ?>">
-              <?php the_title(); ?>
-            </a>
-          </h1> <!-- Title of the post -->
+      <?php the_time(); ?>
 
-          <?php echo get_the_date(); ?>
-          <!-- Date published -->
-          <?php the_time(); ?>
-          <!-- Time published -->
-          <?php the_author(); ?><br /> <!-- Author of the post -->
+      <?php the_author(); ?><br />
 
+      <?php
+      if (has_post_thumbnail()) {
+      ?>
+        <div>
+          <?php the_post_thumbnail(); ?>
+        </div>
+      <?php } ?>
 
+      <?php the_content(); ?>
 
-        </header>
+      <?php the_category(', ') ?>
 
-        <?php
-        if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it. 
-        ?>
-          <aside>
-            <?php the_post_thumbnail(); ?>
-          </aside>
-        <?php } ?>
+      <?php the_tags(', ') ?>
 
+      <?php comments_popup_link(); ?>
 
-        <?php the_content(); ?>
-        <!-- Contents of a post -->
+      <?php edit_post_link(); ?>
 
-        <footer>
+      <?php comments_template(); ?>
 
-          <?php the_category(', ') ?>
-          <!-- Post category -->
-          <?php the_tags(', ') ?>
-          <!-- Post tags -->
+    </section>
 
-          <?php comments_popup_link(); ?>.
-          <!-- comments_number -->
-          <?php edit_post_link(); ?>
+  <?php endwhile; ?>
 
-          <?php comments_template(); ?>
-
-
-        </footer>
-
-
-      </div>
-
-
-
-    <?php endwhile; ?>
-
-
-  <?php endif; ?>
-
-
-</div>
+<?php endif; ?>
 
 <?php get_footer(); ?>
