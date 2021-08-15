@@ -62,3 +62,21 @@ function load_dashicons_front_end() {
   wp_enqueue_style( 'dashicons' );
 }
 add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+
+function target_main_category_query_with_conditional_tags($query)
+{
+
+  if (!is_admin() && $query->is_main_query()) {
+
+    if (is_home()) {
+      $query->set('posts_type', 'post');
+      $query->set('posts_per_page', '3');
+    }
+
+    if (is_archive()) {
+      $query->set('posts_type', 'post');
+      $query->set('posts_per_page', '-1');
+    }
+  }
+}
+add_action('pre_get_posts', 'target_main_category_query_with_conditional_tags');
