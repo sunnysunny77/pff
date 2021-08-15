@@ -4,16 +4,16 @@
 
   <?php while (have_posts()) : the_post(); ?>
     
-    <?php
-    $classes = [
-      'content-area',
-      'col-sm-12 ',
-      'col-lg-8',
-      'mx-auto'
-    ];
-    ?>
+	  <?php
+		$classes = [
+		  'content-area',
+		  'col-sm-12 ',
+		  'col-lg-8',
+		  'mx-auto'
+		];
+	  ?>
 
-    <article <?php post_class($classes); ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class($classes); ?> id="post-<?php the_ID(); ?>">
 
       <h1> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h1>
 
@@ -34,14 +34,16 @@
       <?php comments_popup_link(); ?>.
 
       <?php edit_post_link(); ?>
-         
-    </article>
+		  
+	 </article>
 
     <br>
 
   <?php endwhile; ?>
 
 <?php endif; ?>
+
+<?php dynamic_sidebar("widget"); ?>
 
 <?php dynamic_sidebar("widget1"); ?>
 

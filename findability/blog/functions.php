@@ -38,7 +38,7 @@ function register_my_custom_sidebars()
     array(
       'name' => 'widget',
       'id' => 'sidebar-1',
-      'before_widget' => '<div class = "widget">',
+      'before_widget' => '<div class = "widget content-area col-sm-12 col-lg-8 mx-auto">',
       'after_widget' => '</div>',
       'before_title' => '<h3>',
       'after_title' => '</h3>',
