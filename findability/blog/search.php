@@ -22,7 +22,10 @@
 	
       		<?php comments_popup_link(); ?>
 
-
+            <br>
+            <br>
+            <br>
+            
         <?php endwhile; ?>
 
     <?php else : ?>

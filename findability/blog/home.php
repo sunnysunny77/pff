@@ -40,6 +40,8 @@
 	 </article>
 
     <br>
+    <br>
+    <br>
 
   <?php endwhile; ?>
 
