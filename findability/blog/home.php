@@ -31,6 +31,8 @@
 
       <?php the_tags(', ') ?>
 
+      Comments:
+
       <?php comments_popup_link(); ?>.
 
       <?php edit_post_link(); ?>

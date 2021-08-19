@@ -22,6 +22,8 @@
 
 			<?php the_excerpt(); ?>
 
+			Comments:
+
 			<?php comments_popup_link(); ?>
 
 			<br>
