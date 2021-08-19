@@ -10,13 +10,18 @@
 
             <?php if (has_post_thumbnail()) {  ?> <div> <?php the_post_thumbnail(); ?> </div> <?php } ?>
 
-            <a href="<?php the_permalink() ?>">
-                <h2><?php the_title(); ?></h2>
-            </a>
+            <h2> 
+               <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            </h2>
 
             <br>
 
             <?php the_content() ?>
+	
+			Comments:
+	
+      		<?php comments_popup_link(); ?>
+
 
         <?php endwhile; ?>
 
@@ -26,7 +31,7 @@
 
     <?php endif; ?>
 
-    <?php get_search_form(); ?>
+	<?php get_search_form(); ?>
 
 </section>
 
