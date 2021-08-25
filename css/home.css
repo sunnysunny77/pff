@@ -6,6 +6,16 @@
   margin: 0.25%;
 }
 
+.tumblr {
+	text-indent:-9999px; 
+	overflow:hidden; 
+	width:129px; 
+	height:20px; 
+	background:url('https://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;
+	float: right;
+	margin: 0.25%;
+}
+
 #goal {
 	background-image: url(../images/home/goal.png);
 	background-size: 100% 100%;
