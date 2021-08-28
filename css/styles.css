@@ -85,6 +85,10 @@ nav li, footer li {
 	display: inline-block;
 }
 
+nav li:nth-child(7), footer li:nth-child(7) { 
+display: block;
+}
+
 a {
 	color: black;
 	text-decoration: none;
