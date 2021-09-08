@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+table {
+  color: white;
+  margin: 50px 0;
+  width: 100%;
+  border-collapse: collapse;
+  word-wrap: break-word;
+}
+
+table a {
+	color: darkorange;
+}
+
+caption {
+  text-align: right;
+}
+
+tr {
+	display: flex;
+}
+
+th {
+  text-align: left;
+  padding: 25px 0;
+  text-decoration: underline;
+}
+
+td {
+  text-align: center;
+  border: 1px solid white;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 50%;
+}
