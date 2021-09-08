@@ -1,2 +1,14 @@
 @charset "utf-8";
 
+.vcard {
+	color: white;
+}
+
+.vcard a {
+	color: darkorange;
+}
+
+img {
+	display: block;
+	margin: 10% auto;
+}
