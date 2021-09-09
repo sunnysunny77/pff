@@ -21,7 +21,7 @@
 						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/forms.html" ?>>FORMS</a>
 					</li>
 					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/guidelines.html" ?>>GUIDELINES</a>
+						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/documents.html" ?>>DOCUMENTS</a>
 					</li>
 					<li>
 						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/findability.html" ?>>FINDABILITY</a>
