@@ -19,7 +19,7 @@
 
   <header>
 
-    <nav class="navbar navbar-expand-md navbar-dark" role="navigation">
+    <nav class="navbar navbar-expand-md navbar-light" role="navigation">
 
       <div class="container">
 
