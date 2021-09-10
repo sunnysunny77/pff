@@ -14,6 +14,9 @@
 	background:url('https://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;
 	float: right;
 	margin: 0.25%;
+	background-blend-mode: screen;
+	background-color: #1B9CFC;
+	border-radius: 3px;
 }
 
 #goal {
@@ -28,7 +31,7 @@
 
 main p {
 	text-align: center;
-	background-color: rgb( 255, 203, 26);
+	background-color: #ffd32a;
 	width: 45%;
 	margin: auto;
 	box-shadow: 0 0 3px cornsilk;
@@ -56,9 +59,9 @@ aside {
 	width: 31.125%;
 	margin: 0 1.5% 0 0;
 	text-align: center;
-	background-color: darkkhaki;
+	background-color: #ffbe76;
 	box-shadow: 0 0 3px cornsilk;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 3%;
 	color: #1F1F1F;
 	height: 355px
@@ -66,11 +69,11 @@ aside {
 
 article {
 	text-align: center;
-	background-color: tan;
+	background-color: #ffda79;
 	width: 53.375%;
 	margin: 0 0 0 1.5%;
 	box-shadow: 0 0 3px cornsilk;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 3%;
 	color: #1F1F1F;
 	float: left;

@@ -5,7 +5,8 @@
 }
 
 .vcard a {
-	color: darkorange;
+	color: white;
+	text-decoration: underline;
 }
 
 img {

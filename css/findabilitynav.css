@@ -3,7 +3,7 @@
 #navOne {
 	border-bottom-right-radius: unset;
 	border-bottom-left-radius: unset;
-	border-bottom: 7px solid coral;
+	border-bottom: 7px solid #ffb142;
 }
 
 nav:nth-child(3) li {

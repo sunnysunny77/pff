@@ -1,9 +1,11 @@
 @charset "utf-8";
 
+@import url(./trebuchet-ms.ttf);
+
 body {
 	background-image: url("../images/template/b-back.jpg");
 	background-size: 100% 100%;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: "Trebuchet MS";
 	font-size: larger;
 }
 
@@ -29,7 +31,7 @@ body {
 header {
 	height: 75px;
 	width: 100%;
-	background-color: coral;
+	background-color: #ffb142;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	white-space: nowrap;
@@ -57,7 +59,7 @@ header {
 }
 
 nav {
-	background-color: rgb( 255, 203, 26);
+	background-color: #ffda79;
 	text-align: center;
 	width: 100%;
 	border-bottom-right-radius: 10px;
@@ -99,8 +101,8 @@ a:hover {
 }
 
 main {
-	background-color: #21633E;
-	border-radius: 10px;
+	background-color: dimgray;
+	border-radius: 5px;
 	width: 94%;
 	margin: 1.5% 0;
 	padding: 3%;
@@ -113,7 +115,7 @@ main h2 {
 
 footer {
 	width: 94%;
-	background-color: darkorange;
+	background-color: #ccae62;
 	border-radius: 10px;
 	text-align: center;
 	padding: 3%;
