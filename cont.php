@@ -3,7 +3,7 @@
 <body>
 <style>
     body {
-        background-color:  rgb(235, 64, 52);
+        background-color:  dimgray;
         min-height: 100vh;
         margin: 0;
     }
@@ -11,10 +11,9 @@
         color: white;
         padding-top: 50vh;
         text-align: center;
-        font-size: 50px;
+        font-size: 35px;
         margin: auto;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        
+        font-family: "Trebuchet MS";
     }
 </style>
 <?php
