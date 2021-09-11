@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_REQUEST["phone"];
     $text = $_REQUEST["text"];
     $to_email = "shlooby07@gmail.com";
-    $subject = "New Membership Enquiry";
+    $subject = "New Contact Message";
     
     $contactus = "
     
