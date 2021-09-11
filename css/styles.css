@@ -108,7 +108,7 @@ main {
 	padding: 3%;
 }
 
-main h2 {
+main h2, main h3 {
 	text-align: right;
 	color: white;
 }
