@@ -112,7 +112,7 @@ window.onload = function () {
   "use strict";
 
   // Add an event listener to the form:
-  addEvent(checkId("form"), "submit", validate);
+  addEvent(checkId("form1"), "submit", validate);
 
   // Enable tooltips:
   enableTooltips(checkId("name"));

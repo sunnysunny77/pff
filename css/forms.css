@@ -44,6 +44,14 @@ select {
   padding: 5px 10px;
 }
 
+textarea {
+  resize: none;
+  width: calc(100% - 20px);
+  border: 1px solid white;
+  display: block;
+  margin: auto auto 10px auto;
+}
+
 .tooltip {
   visibility: hidden;
   display: block;

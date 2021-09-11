@@ -22,7 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_REQUEST["name"];
     $email = $_REQUEST["email"];
     $phone = $_REQUEST["phone"];
-    $text = $_REQUEST["text"];
+    $age = $_REQUEST["age"];
+    $gender = $_REQUEST["gender"];
+    $league = $_REQUEST["league"];
     $to_email = "shlooby07@gmail.com";
     $subject = "New Membership Enquiry";
     
@@ -31,7 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Name: ".$name."
     Phone: ".$phone."
     Email: ".$email."
-    Message: ".$text;
+    Age: ".$age."
+    Gender: ".$gender."
+    League: ".$league;
 
     $contactus  = wordwrap($contactus ,70);
 
