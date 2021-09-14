@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-ul {
+main ul {
 	color: white;
 	margin: 10px 0 20px 0;
 }
 
-li {
+main li {
 	margin: 5px 0;
 }
