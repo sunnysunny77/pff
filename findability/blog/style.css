@@ -15,14 +15,13 @@ main {
   padding: 2.5%;
   background-image: url("https://perthfootballfixtures.online/findability/blog/wp-content/uploads/2021/08/b-back.png");
 }
-
 h1 a,
 h2 a,
 h3 a,
 h4 a,
 h5 a,
 h6 a {
-	color: #575757;
+color: #575757;
 }
 
 a {
@@ -56,4 +55,22 @@ a:hover {
 .under {
   border-bottom: 1px solid black;
   width: 110px;
+}
+
+.valid {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: 5% auto auto auto;
+  width: 88px;
+  height: 31px;
+}
+
+.footer ul li:nth-child(3) span {
+  background-image: url(https://perthfootballfixtures.online/findability/blog/wp-content/uploads/2021/09/valid-html.png);
+}
+
+.footer ul li:nth-child(4) span {
+  background-image: url(https://perthfootballfixtures.online/findability/blog/wp-content/uploads/2021/09/valid-css.png);
 }

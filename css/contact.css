@@ -9,7 +9,13 @@
 	text-decoration: underline;
 }
 
-img {
-	display: block;
-	margin: 10% auto;
+form + span {
+  background-image: url(../images/contact/contact-book.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin: 10% auto;
+  width: 100px;
+  height: 100px;
 }

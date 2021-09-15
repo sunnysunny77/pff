@@ -1,9 +1,14 @@
 @charset "utf-8";
-@charset "utf-8";
 
-main img {
+br + span {
+	background-image: url(../images/findability/seo.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 	display: block;
 	margin: auto;
+	width: 220px;
+	height: 220px;
 }
 
 main a {

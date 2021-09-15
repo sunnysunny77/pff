@@ -33,8 +33,10 @@
 			</div>
 			<div class="col-5 col-lg-3 mr-3 p-0">
 				<ul class=" text-dark p-0">
-					<li class="under text-left mb-2"><span class="dashicons dashicons-info-outline"></span>&nbsp;&nbsp;Licence</li>
+					<li class="under text-left mb-2"><span class="dashicons dashicons-info-outline"></span>&nbsp;&nbsp;Info</li>
 					<li><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CREATIVE COMMONS<img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a></li>
+					<li><span class="valid" role="img" aria-label="Valid HTML"></span></li>
+					<li><span class="valid" role="img" aria-label="Valid CSS"></span></li>
 				</ul>
 			</div>
 		</div>
