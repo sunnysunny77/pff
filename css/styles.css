@@ -52,6 +52,7 @@ header {
   text-indent: -9999px;   
   white-space: nowrap;
   overflow: hidden;
+  color: black;
 }
 
 #span2 {
