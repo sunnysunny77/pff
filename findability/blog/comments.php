@@ -1,6 +1,7 @@
 <div id="comments" class="content-area col-sm-12 col-lg-8 mx-auto">
-
-  <?php wp_list_comments(); ?>
+  <ul class="comment-list comments">
+    <?php wp_list_comments(); ?>
+  </ul>
 
   <?php comment_form(
 
