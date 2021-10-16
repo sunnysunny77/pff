@@ -5,12 +5,16 @@
   src: url(./trebuchet-ms.ttf);
 }
 
+html {
+  -webkit-text-size-adjust: 100%; 
+}
+
 body {
   background-image: url("../images/template/b-back.jpg");
   background-size: 100% 100%;
   font-family: "Trebuchet MS";
-  font-size: larger;
   color: white;
+  font-size: larger;
 }
 
 .clearfloat {
@@ -49,10 +53,15 @@ header {
   width: 14.608%;
   padding-right: 50.392%;
   display: inline-block;
-  text-indent: -9999px;   
-  white-space: nowrap;
-  overflow: hidden;
   color: black;
+}
+
+#hide {
+  position: absolute;
+  left: -200vw;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 #span2 {
@@ -84,17 +93,17 @@ nav h1 {
   color: black;
 }
 
-nav ul,
-footer ul {
-  padding: 0;
-  margin: 0;
-  line-height: 40px;
+nav ul ,
+footer ul  {
+  padding: 0 10px;
+  margin: auto;
 }
 
 nav li,
 footer li {
   list-style-type: none;
   display: inline-block;
+  line-height: 30px;
 }
 
 nav li:nth-child(7),
@@ -162,26 +171,18 @@ footer a span {
 
 @media only screen and (max-width: 720px) {
   body {
-    font-size: 1.05em !important;
-  }
-  nav,
-  footer {
-    font-size: small;
-  }
-  nav ul,
-  footer ul {
-    line-height: 25px;
+    font-size: 1.05em ;
   }
 }
 
 @media only screen and (max-width: 480px) {
   body {
-    font-size: 0.85em !important;
+    font-size: 0.85em;
   }
 }
 
 @media only screen and (max-width: 240px) {
   body {
-    font-size: 0.75em !important;
+    font-size: 0.75em;
   }
 }

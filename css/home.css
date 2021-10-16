@@ -9,9 +9,9 @@
 .tumblr {
   text-indent: -9999px;
   overflow: hidden;
-  width: 129px;
+  width: 20px;
   height: 20px;
-  background: url("https://platform.tumblr.com/v1/share_3.png") top left
+  background: url("https://platform.tumblr.com/v1/share_4.png") top left
     no-repeat transparent;
   float: right;
   margin: 0.25%;
@@ -22,7 +22,7 @@
 
 .twitter-share-button:hover, .fb-like:hover, .tumblr:hover {
 	opacity: 0.75;
-  }
+}
 
 #goal {
   background-image: url(../images/home/goal.png);
