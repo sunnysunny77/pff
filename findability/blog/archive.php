@@ -10,7 +10,7 @@
 
 			<?php if (has_post_thumbnail()) {  ?> <div> <?php the_post_thumbnail(); ?> </div> <?php } ?>
 
-			<h2><?php the_title(); ?></h2>
+			<h2> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></h2>
 
 			<?php the_excerpt(); ?>
 
