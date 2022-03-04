@@ -3,41 +3,51 @@
 <?php if (have_posts()) : ?>
 
   <?php while (have_posts()) : the_post(); ?>
-    
-	  <?php
-		$classes = [
-		  'content-area',
-		  'col-sm-12 ',
-		  'col-lg-8',
-		  'mx-auto'
-		];
-	  ?>
 
-      <article <?php post_class($classes); ?> id="post-<?php the_ID(); ?>">
+    <?php
+    $classes = [
+      'content-area',
+      'col-sm-12 ',
+      'col-lg-8',
+      'mx-auto'
+    ];
+    ?>
+
+    <article <?php post_class($classes); ?> id="post-<?php the_ID(); ?>">
 
       <h1> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h1>
 
-      <?php echo get_the_date(); ?>
-
-      <?php the_time(); ?>
-
-      <?php the_author(); ?>
+      <p>
+        By:&nbsp;
+        <?php the_author(); ?>
+        ,
+        <?php echo get_the_date(); ?>
+      </p>
 
       <?php if (has_post_thumbnail()) {  ?> <div> <?php the_post_thumbnail(); ?> </div> <?php } ?>
 
       <?php the_content() ?>
 
-      <?php the_category(', ') ?>
+      <?php the_category();  ?>
 
-      <?php the_tags(', ') ?>
+      <p>
 
-      Comments:
+        <?php the_tags(); ?>
 
-      <?php comments_popup_link(); ?>.
+      </p>
+
+      <p>
+
+        Comments:
+
+        <?php comments_popup_link(); ?>
+
+      </p>
+
 
       <?php edit_post_link(); ?>
-		  
-	 </article>
+
+    </article>
 
     <br>
     <br>
