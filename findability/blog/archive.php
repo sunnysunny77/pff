@@ -12,20 +12,25 @@
 
 			<h2><?php the_title(); ?></h2>
 
-			<?php the_content() ?>
-
-			<?php echo get_the_date(); ?>
-
-			<?php the_time(); ?>
-
-			<?php the_author(); ?><br />
-
 			<?php the_excerpt(); ?>
 
-			Comments:
+			<p>
+				By:&nbsp;
+				<?php the_author(); ?>
+				,
+				<?php echo get_the_date(); ?>
+				,
+				<?php the_time(); ?>
+			</p>
 
-			<?php comments_popup_link(); ?>
+			<p>
 
+				Comments:
+
+				<?php comments_popup_link(); ?>
+
+			</p>
+			
 			<br>
 			<br>
 			<br>

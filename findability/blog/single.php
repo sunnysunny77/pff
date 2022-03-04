@@ -4,7 +4,7 @@
 
   <?php while (have_posts()) : the_post(); ?>
 
-  <?php
+    <?php
     $classes = [
       'content-area',
       'col-sm-12 ',
@@ -14,10 +14,6 @@
     ?>
 
     <section id="post-<?php the_ID(); ?>" <?php post_class($classes); ?>>
-
-      <div id="prevpost"><?php previous_post_link(); ?></div>
-		
-      <div id="nextpost"><?php next_post_link(); ?> </div>
 
       <h1>
         <a href="<?php the_permalink(); ?>">
@@ -39,20 +35,35 @@
         </div>
       <?php } ?>
 
-      <?php the_content(); ?>
-
-      <?php the_category(', ') ?>
-
-      <?php the_tags(', ') ?>
-
-      Comments:
-
-      <?php comments_popup_link(); ?>
+      <?php the_content() ?>
 
       <?php edit_post_link(); ?>
 
-      <?php comments_template(); ?>
+      <?php the_post_navigation(array(
+        'prev_text'                  => __('← %title'),
+        'next_text'                  => __('→ %title'),
+        'screen_reader_text' => __('Continue Reading'),
+      )); ?>
 
+      <p>
+        By:&nbsp;
+        <?php the_author(); ?>
+        ,
+        <?php echo get_the_date(); ?>
+      </p>
+      
+      <?php the_category();  ?>
+
+      <p>
+
+        <?php the_tags(); ?>
+
+      </p>
+
+      <?php if (comments_open() || get_comments_number()) {
+        comments_template();
+      } ?>
+      
     </section>
 
   <?php endwhile; ?>

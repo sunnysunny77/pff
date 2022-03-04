@@ -1,6 +1,17 @@
 <div id="comments" class="content-area col-sm-12 col-lg-8 mx-auto">
-  <ul class="comment-list comments">
-    <?php wp_list_comments(); ?>
+  <ul>
+    <li>Comments
+      <ul>
+        <?php if (have_comments()) {
+
+          wp_list_comments();
+        } else { ?>
+
+          <li>none</li>
+
+        <?php } ?>
+      </ul>
+    </li>
   </ul>
 
   <?php comment_form(
@@ -18,5 +29,4 @@
     )
   );
   ?>
-
 </div>
