@@ -9,7 +9,11 @@
 		<br>
 		Untill we find it, please try elsewhere.
 	</p>
+	
+	<?php get_search_form(); ?>
+
 	<img width="100" height="100" src="https://perthfootballfixtures.online/findability/blog/wp-content/uploads/2021/08/404-error.png" atl="404 error icon" />
+
 
 </section>
 
