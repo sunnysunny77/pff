@@ -1,6 +1,10 @@
 <?php
 
-function boot_scripts()
+if (!isset($content_width)) {
+  $content_width = 1920;
+}
+
+function themes_scripts()
 {
   wp_register_script('ga', 'https://www.googletagmanager.com/gtag/js?id=UA-204247411-4');
   wp_enqueue_script('ga');
@@ -16,8 +20,9 @@ function boot_scripts()
   wp_enqueue_script('scripts');
   wp_register_style('screen', get_template_directory_uri() . '/style.css', array(), false, 'all');
   wp_enqueue_style('screen');
+  wp_enqueue_style('dashicons');
 }
-add_action('wp_enqueue_scripts', 'boot_scripts');
+add_action('wp_enqueue_scripts', 'themes_scripts');
 
 function themes_setup()
 {
@@ -25,24 +30,22 @@ function themes_setup()
   add_theme_support('widget-customizer');
   add_theme_support('title-tag');
   add_theme_support('html5', ['script', 'style', 'comment-form', 'search-form', 'gallery', 'caption']);
-  register_nav_menus(array('primary' => __('Primary Menu', 'THEMENAME'),));
+  register_nav_menus(
+    array(
+    'primary' => 'Primary Menu',
+    'secondary' => 'Secondary Navigation',)
+);
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action('after_setup_theme', 'themes_setup');
 
-function register_navwalker()
-{
-
-  require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-}
-add_action('after_setup_theme', 'register_navwalker');
-
-function register_my_custom_sidebars()
+function themes_my_custom_sidebars()
 {
   register_sidebar(
     array(
       'name' => 'widget',
       'id' => 'sidebar-1',
-      'before_widget' => '<section class = "widget content-area col-sm-12 col-lg-8 mx-auto">',
+      'before_widget' => '<section id="%1$s" class = "widget content-area col-sm-12 col-lg-8 mx-auto %2$s">',
       'after_widget' => '</section>',
       'before_title' => '<h3>',
       'after_title' => '</h3>',
@@ -53,22 +56,18 @@ function register_my_custom_sidebars()
     array(
       'name' => 'widget1',
       'id' => 'sidebar-2',
-      'before_widget' => '<section class = "widget1">',
+      'before_widget' => '<section id="%1$s" class = "widget1 %2$s">',
       'after_widget' => '</section>',
       'before_title' => '<h3>',
       'after_title' => '</h3>',
     )
   );
-}
-add_action('widgets_init', 'register_my_custom_sidebars');
 
-function load_dashicons_front_end()
-{
-  wp_enqueue_style('dashicons');
 }
-add_action('wp_enqueue_scripts', 'load_dashicons_front_end');
+add_action('widgets_init', 'themes_my_custom_sidebars');
 
-function target_main_category_query_with_conditional_tags($query)
+
+function themes_with_conditional_tags($query)
 {
 
   if (!is_admin() && $query->is_main_query()) {
@@ -84,4 +83,4 @@ function target_main_category_query_with_conditional_tags($query)
     }
   }
 }
-add_action('pre_get_posts', 'target_main_category_query_with_conditional_tags');
+add_action('pre_get_posts', 'themes_with_conditional_tags');

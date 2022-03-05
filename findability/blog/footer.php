@@ -3,33 +3,22 @@
 	<div class="container col-10 col-lg-6 text-right  mx-auto">
 		<div class="row">
 			<div class="col-5 col-lg-4 mr-3 p-0 ">
-				<ul class="text-dark p-0">
-					<li class="under text-left mb-2"><span class="dashicons dashicons-admin-links"></span>&nbsp;&nbsp;Site</li>
-					<li>
-						<a href="<?php echo wp_make_link_relative('https://localhost/findability/blog/'); ?>">FINDABILITY BLOG</a>
-					</li>
-					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/index.html" ?>>HOME</a>
-					</li>
-					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/fixtures.html" ?>>FIXTURES</a>
-					</li>
-					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/contact.html" ?>>CONTACT</a>
-					</li>
-					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/membership.html" ?>>MEMBERSHIP</a>
-					</li>
-					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/documents.html" ?>>DOCUMENTS</a>
-					</li>
-					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/findability.html" ?>>FINDABILITY</a>
-					</li>
-					<li>
-						<a href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/site-map.html" ?>>SITE MAP</a>
-					</li>
-				</ul>
+				<?php wp_nav_menu(
+					array(
+						'menu' => 'Secondary Navigation',
+						'container'  => 'ul',
+						'menu_class' => 'text-dark p-0',
+						'items_wrap' => '<ul id="%1$s" class="%2$s">	
+											<li class="under text-left mb-2">
+												<span class="dashicons dashicons-admin-links"></span>
+												&nbsp;&nbsp;Site
+											</li>
+											<li>
+											<a href="' .  esc_url(home_url('/')) . '">' .  strtoupper(get_bloginfo('name')) .'</a>
+											</li>
+											%3$s</ul>',
+					
+				)); ?>
 			</div>
 			<div class="col-5 col-lg-3 mr-3 p-0">
 				<ul class=" text-dark p-0">

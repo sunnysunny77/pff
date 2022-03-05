@@ -30,7 +30,7 @@
 
     <?php else : ?>
 
-        <p><?php echo __('No results found for:'); ?> &nbsp; <?php echo get_search_query(); ?></p>
+        <p><?php echo 'No results found for:'; ?> &nbsp; <?php echo get_search_query(); ?></p>
 
     <?php endif; ?>
 
