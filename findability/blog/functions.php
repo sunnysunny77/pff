@@ -4,6 +4,25 @@ if (!isset($content_width)) {
   $content_width = 1920;
 }
 
+if (!function_exists('themessetup')) {
+
+  function themes_setup()
+  {
+    add_theme_support('menus');
+    add_theme_support('widget-customizer');
+    add_theme_support('title-tag');
+    add_theme_support('html5', ['script', 'style', 'comment-form', 'search-form', 'gallery', 'caption']);
+    register_nav_menus(
+      array(
+        'primary' => 'Primary Menu',
+        'secondary' => 'Secondary Navigation',
+      )
+    );
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+  }
+  add_action('after_setup_theme', 'themes_setup');
+}
+
 function themes_scripts()
 {
   wp_register_script('ga', 'https://www.googletagmanager.com/gtag/js?id=UA-204247411-4');
@@ -23,21 +42,6 @@ function themes_scripts()
   wp_enqueue_style('dashicons');
 }
 add_action('wp_enqueue_scripts', 'themes_scripts');
-
-function themes_setup()
-{
-  add_theme_support('menus');
-  add_theme_support('widget-customizer');
-  add_theme_support('title-tag');
-  add_theme_support('html5', ['script', 'style', 'comment-form', 'search-form', 'gallery', 'caption']);
-  register_nav_menus(
-    array(
-    'primary' => 'Primary Menu',
-    'secondary' => 'Secondary Navigation',)
-);
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-}
-add_action('after_setup_theme', 'themes_setup');
 
 function themes_my_custom_sidebars()
 {
@@ -62,7 +66,6 @@ function themes_my_custom_sidebars()
       'after_title' => '</h3>',
     )
   );
-
 }
 add_action('widgets_init', 'themes_my_custom_sidebars');
 
