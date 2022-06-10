@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://perthfootballfixtures.online/sitemap.xml
+Sitemap: https://pff.sunnyhome.site/sitemap.xml
