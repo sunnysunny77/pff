@@ -49,6 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
     <p> <?php echo $res; ?></p> 
-    <?php header( "Refresh:5; url=https://perthfootballfixtures.online", true, 303); ?>
+    <?php header( "Refresh:5; url=https://pff.sunnyhome.site", true, 303); ?>
 </body>
 </html>
