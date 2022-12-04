@@ -6,21 +6,7 @@
   margin: 0.25%;
 }
 
-.tumblr {
-  text-indent: -9999px;
-  overflow: hidden;
-  width: 20px;
-  height: 20px;
-  background: url("https://platform.tumblr.com/v1/share_4.png") top left
-    no-repeat transparent;
-  float: right;
-  margin: 0.25%;
-  background-blend-mode: screen;
-  background-color: #1b9cfc;
-  border-radius: 3px;
-}
-
-.twitter-share-button:hover, .fb-like:hover, .tumblr:hover {
+.twitter-share-button:hover, .fb-like:hover {
 	opacity: 0.75;
 }
 
