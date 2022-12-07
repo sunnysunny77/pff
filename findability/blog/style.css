@@ -71,6 +71,7 @@ a:hover {
 /* footer */
 .footer a {
   color: inherit;
+  font-size: 0.9em;
 }
 
 .footer ul {

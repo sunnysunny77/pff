@@ -132,12 +132,13 @@ main h3 {
 }
 
 footer {
-  width: 94%;
+  width: 96%;
   background-color: #ccae62;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   text-align: center;
-  padding: 3%;
+  padding: 2%;
+  font-size: 0.85em;
 }
 
 footer a span {
@@ -169,7 +170,10 @@ footer a span {
 
 @media only screen and (max-width: 720px) {
   body {
-    font-size: 1.05em ;
+    font-size: 1.05em;
+  }
+  footer {
+    font-size: inherit;
   }
 }
 
