@@ -1,8 +1,6 @@
 @charset "utf-8";
 
 #navOne {
-  border-bottom-right-radius: unset;
-  border-bottom-left-radius: unset;
   border-bottom: 7px solid #ffb142;
 }
 
