@@ -53,7 +53,6 @@ a:hover {
     line-height: inherit;
 }
 
-
 .search-submit {
     background: #f7f7f7;
     border: 1px solid #ccc;
@@ -66,7 +65,9 @@ a:hover {
     line-height: inherit;
 }
 
-
+article {
+	word-break: break-word;
+}
 
 /* footer */
 .footer a {
