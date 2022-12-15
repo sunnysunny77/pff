@@ -7,13 +7,13 @@
 
 html {
   -webkit-text-size-adjust: 100%; 
-  overflow: overlay;
+  overflow-y: scroll;
 }
 
 body {
   background-image: url("../images/template/b-back.jpg");
   background-size: cover;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
