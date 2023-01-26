@@ -58,39 +58,47 @@
         <form id="form1" method="post" action="member.php">
           <fieldset>
             <legend>Membership Enquiry</legend>
-            <label for="name">
-              Name
-              <span class="tooltip"> &bull; Enter your name </span>
-            </label>
-            <input
-              type="text"
-              placeholder="Name:"
-              id="name"
-              name="name"
-              required
-            />
-            <label for="email">
-              Email
-              <span class="tooltip"> &bull; example@gmail.com </span>
-            </label>
-            <input
-              type="email"
-              placeholder="Email:"
-              id="email"
-              name="email"
-              required
-            />
-            <label for="phone">
-              Phone
-              <span class="tooltip"> &bull; Permits +############### </span>
-            </label>
-            <input
-              type="text"
-              placeholder="Phone:"
-              name="phone"
-              id="phone"
-              required
-            />
+            <div>
+              <div class="wrap">
+              <label for="name">
+                Name
+                <span class="tooltip"> &bull; Enter your name </span>
+              </label>
+              <input
+                type="text"
+                placeholder="Name:"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="wrap">
+              <label for="email">
+                Email
+                <span class="tooltip"> &bull; example@gmail.com </span>
+              </label>
+              <input
+                type="email"
+                placeholder="Email:"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="wrap">
+              <label for="phone">
+                Phone
+                <span class="tooltip"> &bull; Permits +############### </span>
+              </label>
+              <input
+                type="text"
+                placeholder="Phone:"
+                name="phone"
+                id="phone"
+                required
+              />
+            </div>
+            <div class="wrap">
             <label for="age">
               Age
               <span class="tooltip"> &bull; Enter your age </span>
@@ -102,6 +110,8 @@
               id="age"
               required
             />
+          </div>
+          </div>
             <fieldset>
               <legend>Gender</legend>
               <label for="male"> Male </label>

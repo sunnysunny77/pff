@@ -5,10 +5,14 @@ form {
   padding-top: 10px;
 }
 
+fieldset {
+  margin-bottom: 5px
+}
+
 label {
   display: block;
   height: 45.5px;
-  margin: 5px auto;
+  margin: auto auto 5px auto;
 }
 
 input {
@@ -75,6 +79,24 @@ textarea {
   float: right;
   margin-top: 10px;
 }
+
+.wrap {
+  width: 49%;
+  display: inline;
+}
+
+form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 720px) {
+  .wrap {
+    width: 100%;
+  }
+}
+
 
 @media only screen and (max-width: 720px) {
   label {
